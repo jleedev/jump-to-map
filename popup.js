@@ -15,6 +15,10 @@ const { zoom, lat, lng } = JSON.parse(
     `https://wikishootme.toolforge.org/#lat=${lat}&lng=${lng}&zoom=${zoom}`,
     "WikiShootMe!",
   ],
+  [
+    `https://zelonewolf.github.io/openstreetmap-americana/#${zoom}/${lat}/${lng}`,
+    "Americana",
+  ],
 ]
   .map(([href, textContent]) =>
     Object.assign(document.createElement("a"), {
