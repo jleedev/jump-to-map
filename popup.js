@@ -19,6 +19,10 @@ const { zoom, lat, lng } = JSON.parse(
     `https://zelonewolf.github.io/openstreetmap-americana/#${zoom}/${lat}/${lng}`,
     "Americana",
   ],
+  [
+    `https://www.alltheplaces.xyz/map/#${zoom}/${lat}/${lng}`,
+    "All The Places",
+  ],
 ]
   .map(([href, textContent]) =>
     Object.assign(document.createElement("a"), {
