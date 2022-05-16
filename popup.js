@@ -23,6 +23,10 @@ const { zoom, lat, lng } = JSON.parse(
     `https://www.alltheplaces.xyz/map/#${zoom}/${lat}/${lng}`,
     "All The Places",
   ],
+  [
+    `https://www.strava.com/heatmap#${zoom}/${lng}/${lat}/hot/all`,
+    "Strava Global Heatmap",
+  ],
 ]
   .map(([href, textContent]) =>
     Object.assign(document.createElement("a"), {
