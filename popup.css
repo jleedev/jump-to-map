@@ -1,1 +1,3 @@
-a { display: block }
+a { display: block; padding: 1ex }
+p { margin: 0 }
+a:hover { background: silver }
