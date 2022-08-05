@@ -5,7 +5,7 @@ const { zoom, lat, lng } = JSON.parse(
 [
   [
     `https://www.openstreetmap.org/#map=${zoom}/${lat}/${lng}`,
-    'View on OpenStreetMap',
+    "View on OpenStreetMap",
   ],
   [
     `https://www.openstreetmap.org/edit#map=${zoom}/${lat}/${lng}`,
@@ -26,6 +26,10 @@ const { zoom, lat, lng } = JSON.parse(
   [
     `https://www.strava.com/heatmap#${zoom}/${lng}/${lat}/hot/all`,
     "Strava Global Heatmap",
+  ],
+  [
+    `https://demo.f4map.com/#lat=${lat}&lon=${lng}&zoom=${zoom}`,
+    "F4map Demo",
   ],
 ]
   .map(([href, textContent]) =>
