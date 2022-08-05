@@ -30,9 +30,12 @@ const locateMap = (url) => {
     return m.groups;
   }
   const params = Object.fromEntries([...new URLSearchParams(hash.replace('#','?'))]);
-  const {zoom, lat, lng} = params;
+  const {zoom, lat, lng, lon} = params;
   if (zoom && lat && lng) {
     return {zoom, lat, lng};
+  }
+  if (zoom && lat && lon) {
+    return {zoom, lat, lng: lon};
   }
   m = pathname.match(tileUrlRe);
   if (m) {
